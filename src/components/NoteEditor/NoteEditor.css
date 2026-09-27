@@ -80,3 +80,9 @@
 .editor-textarea::placeholder {
     color: #c7c7cc;
 }
+
+.editor-title-input,
+.editor-textarea {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
