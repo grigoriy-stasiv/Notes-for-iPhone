@@ -1,5 +1,5 @@
 import React from 'react';
-import './IphoneFrame.module.css';
+import './IphoneFrame.css';
 
 interface IphoneFrameProps {
   children: React.ReactNode;

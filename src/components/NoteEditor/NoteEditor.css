@@ -1,0 +1,82 @@
+.note-editor-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.editor-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5ea;
+}
+
+.nav-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: #ff9500;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-delete-btn {
+    background: none;
+    border: none;
+    color: #ff3b30;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-back-btn:active,
+.nav-delete-btn:active {
+    opacity: 0.4;
+}
+
+.editor-fields {
+    flex: 1;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.editor-title-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    padding: 0;
+}
+
+.editor-title-input::placeholder {
+    color: #c7c7cc;
+}
+
+.editor-textarea {
+    width: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #3a3a3c;
+    resize: none;
+    padding: 0;
+}
+
+.editor-textarea::placeholder {
+    color: #c7c7cc;
+}

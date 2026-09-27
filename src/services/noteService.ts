@@ -1,26 +1,26 @@
 import axios from 'axios';
 import type { Note } from '../types/note';
 
-const instance = axios.create({
-  baseURL: 'http://localhost:3001',
-});
+const API_URL = 'https://6ab95de8f84897980b729014.mockapi.io/notes';
 
 export const fetchNotes = async (): Promise<Note[]> => {
-  const { data } = await instance.get<Note[]>('/notes');
-  return data.sort((a, b) => b.updatedAt - a.updatedAt);
+  const response = await axios.get<Note[]>(API_URL);
+  return response.data;
 };
+
 
 export const createNote = async (newNote: Note): Promise<Note> => {
-  const { data } = await instance.post<Note>('/notes', newNote);
-  return data;
+  const response = await axios.post<Note>(API_URL, newNote);
+  return response.data;
 };
+
 
 export const updateNote = async (updatedNote: Note): Promise<Note> => {
-  const { data } = await instance.put<Note>(`/notes/${updatedNote.id}`, updatedNote);
-  return data;
+  const response = await axios.put<Note>(`${API_URL}/${updatedNote.id}`, updatedNote);
+  return response.data;
 };
 
-export const deleteNote = async (id: string): Promise<Note> => {
-  const { data } = await instance.delete<Note>(`/notes/${id}`);
-  return data;
+
+export const deleteNote = async (id: string | number): Promise<void> => {
+  await axios.delete(`${API_URL}/${id}`);
 };

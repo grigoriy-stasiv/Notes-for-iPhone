@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, SquarePen } from 'lucide-react';
 import type { Note } from '../../types/note';
-import "./NoteList.module.css";
+import "./NoteList.css";
 
 interface NoteListProps {
   notes: Note[];

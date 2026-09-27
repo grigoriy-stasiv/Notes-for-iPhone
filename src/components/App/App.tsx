@@ -60,11 +60,11 @@ function App() {
       {!isLoading && !isError && (
         activeNote ? (
           <NoteEditor
-            note={activeNote}
-            onBack={() => setActiveNoteId(null)}
-            onUpdateNote={(updated) => updateMutation.mutate(updated)}
-            onDeleteNote={(id) => deleteMutation.mutate(id)}
-          />
+  note={activeNote}
+  onBack={() => setActiveNoteId(null)}
+  onUpdateNote={(updated) => updateMutation.mutate(updated)}
+  onDeleteNote={(id) => deleteMutation.mutate(id)}
+/>
         ) : (
           <NoteList
             notes={notes}
