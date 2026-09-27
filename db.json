@@ -1,0 +1,23 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Покупки",
+      "content": "Купити молоко, хліб, яблука та каву.",
+      "updatedAt": 1710000000000
+    },
+    {
+      "id": "2",
+      "title": "Ідеї для додатків",
+      "content": "Створити клон Нотаток для iPhone на React.",
+      "updatedAt": 1710000050000
+    },
+    {
+      "id": "kr4DjJR37Vo",
+      "title": "",
+      "content": "",
+      "updatedAt": 1790505424170
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
